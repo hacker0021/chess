@@ -3,7 +3,7 @@ import chess.ModelDir.*;
 public class ChessView{
 	
 	
-	public void print(Board  board){
+	public void printBoard(Board  board){
 		
 		for(int i=0; i<49+16+8; i++){
 			System.out.print("*");
@@ -65,10 +65,10 @@ public class ChessView{
 			}
 			System.out.println();
 		}
-		
-
-
 	}
+
+
+
 	
 
 	
