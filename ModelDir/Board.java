@@ -5,7 +5,7 @@ public class Board{
 	public Board(){
 		for(int i=0; i<8; i++){
 			for(int o=0; o<8; o++){
-				B[i][o]=new Square();
+				B[i][o]=new Square(i,o);
 			}
 		}
 		B[0][0].setPiece(new Rook(false,B[0][0]));

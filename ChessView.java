@@ -19,11 +19,11 @@ public class ChessView{
 			for(int i=0; i<8; i++){
 				System.out.print("  ");
 				
-				if(board.getCell(7-o,7-i).isEmpty()==true){
+				if(board.getCell(7-o,i).isEmpty()==true){
 					System.out.print("    ");
 				}
 				else{
-					Piece Th=board.getCell(7-o,7-i).getPiece();
+					Piece Th=board.getCell(7-o,i).getPiece();
 					if(Th instanceof Queen){
 						System.out.print("Q");
 					}

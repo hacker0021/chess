@@ -6,9 +6,8 @@ public class Chess{
 		ChessModel chessmodel = new ChessModel();
 		ChessController chesscontroller = new ChessController();
 		Board board=chessmodel.getBoard();
-
-		int x=2;
-		while(x>0){
+		chessview.printBoard(board);
+		while(true){
 			Square moveFrom = chesscontroller.moveFrom();
 			Square moveTo = chesscontroller.moveTo();
 			board=chessmodel.getBoard();
@@ -18,12 +17,6 @@ public class Chess{
 			moveFrom.clear();
 
 
-
-
-
-
-			x--;
-			
 			chessview.printBoard(board);
 		}
 

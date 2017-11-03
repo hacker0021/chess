@@ -2,16 +2,15 @@ package chess.ModelDir;
 public class Square{
 	private Piece T;
 	private boolean empty;
+	int X;
+	int Y;
 
-/*
-	public Square(Piece T){
-		this.T=T;
-		empty=false;
-	}
-	*/
-	public Square(){
+
+	public Square(int X,int Y){
 		empty=true;
-		
+		this.X=X;
+		this.Y=Y;
+
 	}
 	public void setPiece(Piece T){
 		if(empty==false){
@@ -28,5 +27,11 @@ public class Square{
 	}
 	public boolean isEmpty(){
 		return empty;
+	}
+	public int getX(){
+		return X;
+	}
+	public int getY(){
+		return Y;
 	}
 }
